@@ -15,7 +15,12 @@ alias backend="cd $backend"
 
 alias la="ls -a"
 alias root="cd ~"
+
+# Git
 alias gs="git status"
+alias ga="git add ."
+alias gc="git commit -m"
+alias gp="git push"
 alias gb="git branch"
 
 new-site () {
@@ -55,9 +60,3 @@ new-site () {
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-
-# Git
-alias gs="git status"
-alias ga="git add ."
-alias gc="git commit -m"
-alias gp="git push"
