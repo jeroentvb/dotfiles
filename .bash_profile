@@ -8,6 +8,9 @@ export PATH
 # Prompt customization
 export PS1="⛷  \w $ "
 
+# cowsay -f eyes "Hello there!"
+curl wttr.in/hoorn?0
+
 school=~/stack/school
 alias school="cd $school"
 backend=~/stack/school/backend
