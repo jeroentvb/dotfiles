@@ -15,6 +15,8 @@ alias backend="cd $backend"
 
 alias la="ls -a"
 alias root="cd ~"
+alias gs="git status"
+alias gb="git branch"
 
 new-site () {
   mkdir $1
