@@ -10,7 +10,7 @@ source ~/.bashrc
 export PS1="⛷  \w $ "
 
 # cowsay -f eyes "Hello there!"
-curl wttr.in/hoorn?0
+curl wttr.in/amsterdam?0 &
 
 school=~/stack/school
 alias school="cd $school"
