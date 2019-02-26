@@ -3,19 +3,23 @@
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
-source ~/.bashrc
+#source ~/.bashrc
 
 # export PS1="\u@ \w $ "
 # Prompt customization
 export PS1="⛷  \w $ "
 
 # cowsay -f eyes "Hello there!"
-curl wttr.in/amsterdam?0 &
 
+# Get the weather for amsterdam. This request does take a while and blocks the command line. So I commented it.
+#curl wttr.in/amsterdam?0 &
+
+# cd shortcuts
 school=~/stack/school
 alias school="cd $school"
-backend=~/stack/school/backend
-alias backend="cd $backend"
+
+codep=~/stack/code-projects
+alias codep="cd $codep"
 
 alias la="ls -a"
 alias root="cd ~"
@@ -26,6 +30,7 @@ alias ga="git add ."
 alias gc="git commit -m"
 alias gp="git push"
 alias gb="git branch"
+alias gcheck="git checkout"
 
 new-site () {
   mkdir $1
@@ -50,7 +55,7 @@ new-site () {
   cd ..
   mkdir js
   cd js
-  echo "/*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/" > script.js
+  touch script.js
   cd ..
 }
 
@@ -64,3 +69,7 @@ new-site () {
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
