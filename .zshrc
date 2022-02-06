@@ -14,7 +14,9 @@ zstyle ':vcs_info:*' enable git
 alias gs="git status"
 alias ga="git add ."
 alias gc="git commit -m"
+alias gca="git commit --amend --no-edit"
 alias gp="git push"
+alias gpf="git push --force-with-lease"
 alias gb="git branch"
 alias gcheck="git checkout"
 
